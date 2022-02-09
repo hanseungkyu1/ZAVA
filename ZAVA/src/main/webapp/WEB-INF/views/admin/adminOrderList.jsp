@@ -17,18 +17,14 @@
 	body { font-family:'맑은 고딕', verdana; padding:0; margin:0; }
 	ul { padding:0; margin:0; list-style:none;  }
  
-	div#root { width:90%; margin:0 auto; }
  
- 		section#container { padding:20px 0; border-top:2px solid #eee; border-bottom:2px solid #eee; }
+ 	section#container { padding:20px 0; border-top:2px solid #eee; border-bottom:2px solid #eee; }
 	section#container::after { content:""; display:block; clear:both; }
 	aside { float:left; width:200px; }
-	div#container_box { float:right; width:calc(100% - 200px - 20px); }
 	
 </style>
 
-
 <style>
-
 	div#container_box ul li { border:5px solid #eee; padding:10px 20px; margin-bottom:20px; }
 	div#container_box .orderList span { font-size:20px; font-weight:bold; display:inline-block; width:90px; margin-right:10px; }
 </style>
@@ -37,13 +33,12 @@
 </head>
 <body>
 
-<%-- <jsp:include page="../header.jsp"/> --%>
+<jsp:include page="../member/header.jsp"/>
 
 
 <section id="container">
-
+	<div class="container">
 		<div id="container_box">
-			
 				<ul class="adOrderList">
 					<c:forEach items="${adOrderList}" var="adOrderList">
 						<li>
@@ -54,7 +49,7 @@
 								<p><span>수령인 : </span>${adOrderList.oname}</p>
 								<p><span>가격 : </span><fmt:formatNumber pattern="###,###,###" value="${adOrderList.amount}" />원</p>
 								<p><span>연락처 : </span>${adOrderList.ophone}</p>
-								<p><span>배송상황 </span><br>
+								<p><span>배송상태 </span><br>
 								${adOrderList.ostatus}</p>
 							</div>
 					</li>
@@ -62,6 +57,7 @@
 				</ul>
 				
 			</div>
+		</div>
 </section>
 <jsp:include page="../footer.jsp" />
 </body>

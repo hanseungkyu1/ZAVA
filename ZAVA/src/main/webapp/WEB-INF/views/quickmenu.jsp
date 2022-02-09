@@ -21,10 +21,8 @@
   	top: 165px;
   	margin: 0;
   	}
-  	ul{
+  	.quick{
   	padding: 0;
-  	}
-  	li{
   	font-size: 0.8em;
   	margin-top: 5px;
   	}
@@ -37,7 +35,7 @@
 <body>
 
 	<div class="quickmenu" style="text-align: center;">
-		<ul>
+		<ul class="quick">
 			<li>
 				<div style="cursor:pointer;" onclick="window.scrollTo(0,0);">
 					<box-icon name='chevron-up'></box-icon>
