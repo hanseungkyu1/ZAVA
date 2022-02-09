@@ -192,7 +192,7 @@
 				</form>
 		</div>
 		
-		<div class="order">
+		<div class="order container">
 			<form action="/cart/List" method="post" autocomplete="off">
 
 
@@ -294,10 +294,10 @@
 				</span> <br>
 				<button type="submit" class="order_btn btn btn-success" id="payment" value="주문 결제">주문 결제</button>
 				<button type="button" class="cancel_btn btn-danger" id="payCancel" value="취소">취소</button>
-						</form>
+			</form>
 		</div>
 	</section>
-
+	
 	<script type="text/javascript">
 	
 	$("#new").hide();
