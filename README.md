@@ -1,3 +1,5 @@
+[ZAVA 쇼핑몰_팀 프로젝트.pdf](https://github.com/hanseungkyu1/ZAVA/files/8260080/ZAVA._.pdf)
+---
 # 쇼핑몰 - 팀 프로젝트
 ## 목차
 * 팀원별 구현 기능
